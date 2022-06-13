@@ -18,7 +18,6 @@ class Home extends CI_Controller
 
     public function submit_vehicle_details()
     {
-        //ini_set('display_errors',1);
         $veh_name = $this->input->post('veh_name');
         $veh_type = $this->input->post('veh_type');
         $manf_year = $this->input->post('man_year');

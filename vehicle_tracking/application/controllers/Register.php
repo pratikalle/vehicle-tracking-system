@@ -1,5 +1,5 @@
 <?php
-//ini_set("display_errors",true);
+
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 class Register extends CI_Controller 
@@ -17,7 +17,6 @@ class Register extends CI_Controller
 
     public function submit_register_data()
     {
-        //ini_set('display_errors',1);
         $name = $this->input->post('name');
         $contact_no = $this->input->post('cno');
         $email = $this->input->post('email');

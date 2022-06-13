@@ -1,5 +1,4 @@
 <?php
-ini_set("display_errors",true);
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 class Login extends CI_Controller 
@@ -34,12 +33,6 @@ class Login extends CI_Controller
             echo json_encode(array('status'=>404,'msg'=>'Wrong Username or Password'));
             return false;
         }
-
-        // if($result['status'] != 'A')
-        // {
-        //     echo json_encode(array('status'=>404,'msg'=>'Your Account is Suspended'));
-        //     return false;
-        // }
 
         $_SESSION['uid'] = $result['id'];
         $_SESSION['email'] = $result['email'];
